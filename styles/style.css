@@ -1,4 +1,3 @@
-/* Глобальные стили */
 
 *,
 *::before,
@@ -33,8 +32,6 @@ video {
   width: 100%;
 }
 
-/* Утилитарные классы */
-
 .visually-hidden {
   position: absolute;
   overflow: hidden;
@@ -44,8 +41,6 @@ video {
   clip-path: inset(50%);
   white-space: nowrap;
 }
-
-/* Стили */
 
 .page {
   display: flex;
@@ -74,7 +69,7 @@ video {
   position: relative;
   inline-size: 711px;
   margin: 0 0 11px;
-  block-size: 400px; /* Добавлено: указана явная высота по макету */
+  block-size: 400px; 
 }
 
 .search-form {
@@ -136,7 +131,6 @@ video {
 
 .search-form__textfield::placeholder {
   color: rgba(255, 255, 255, 0.7);
-  /* Удалены лишние свойства шрифта, так как они наследуются от основного элемента */
 }
 
 .search-form__textfield:active {
@@ -146,9 +140,6 @@ video {
 .search-form__textfield:focus {
   outline: none;
 }
-
-/* Удалено, так как состояние уже стилизуется через родительский контейнер лейбла */
-/* .search-form__textfield:focus-visible { } */
 
 .search-form__checkbox-list {
   display: flex;
@@ -227,17 +218,17 @@ video {
   position: relative;
   overflow-y: scroll;
   block-size: 298px;
-  scrollbar-width: thin; /* Изменено: сделан тонкий скролбар */
-  scrollbar-color: #545050 transparent; /* Добавлено: стилизация скролбара */
+  scrollbar-width: thin;
+  scrollbar-color: #545050 transparent;
 }
 
 .content__list::-webkit-scrollbar {
-  width: 5px; /* Добавлено: тонкий скролбар */
+  width: 5px;
 }
 
 .content__list::-webkit-scrollbar-thumb {
-  background-color: #545050; /* Добавлено: стилизация ползунка скролбара */
-  border-radius: 5px; /* Добавлено: округлые края для скролбара */
+  background-color: #545050; 
+  border-radius: 5px;
 }
 
 .content__list-item:not(:last-child) {
@@ -257,7 +248,7 @@ video {
 .content__card-link:hover {
   text-decoration: underline 1px #FFF;
 }
-/* 1234 */
+
 .content__card-link:focus {
   outline: none;
 }
@@ -283,10 +274,9 @@ video {
   font-size: 30px;
   line-height: 1;
   text-transform: uppercase;
-  /* Изменено: добавлены ограничения для длинных заголовков */
-  overflow: hidden; /* Добавлено */
-  text-overflow: ellipsis; /* Добавлено */
-  white-space: nowrap; /* Добавлено */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .content__video-card-description {
