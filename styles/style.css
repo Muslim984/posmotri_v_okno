@@ -257,7 +257,7 @@ video {
 .content__card-link:hover {
   text-decoration: underline 1px #FFF;
 }
-
+/* 1234 */
 .content__card-link:focus {
   outline: none;
 }
