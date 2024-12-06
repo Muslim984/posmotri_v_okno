@@ -105,7 +105,7 @@ video {
   cursor: pointer;
 }
 
-.search-form__label-text:hover {
+.search-form__label:hover .search-form__label-text {
   text-decoration: underline 1px #FFF;
   text-underline-offset: 5px;
 }
